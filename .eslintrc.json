@@ -1,3 +1,14 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "jest": true,
+    "node": true
+  },
+  "plugins": ["prettier"],
+  "extends": [
+    "next/core-web-vitals",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  }
 }
